@@ -7,8 +7,13 @@
 //
 
 #import "ViewController.h"
+#import "FRDataManager.h"
+#import "User+CoreDataClass.h"
+#import "User+CoreDataProperties.h"
 
-@interface ViewController ()
+@interface ViewController () {
+    FRDataManager *dataManager;
+}
 
 @end
 
@@ -16,7 +21,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    dataManager = [FRDataManager shareInstance];
+    NSManagedObjectContext *context = [dataManager frmanagedObjectContext];
+    User *user = [NSEntityDescription insertNewObjectForEntityForName:[User entityName] inManagedObjectContext:context];
+    user.name = @"fan";
+    user.gender = kGenderUnknown;
+    NSError *err = nil;
+    if (![context save:&err]) {
+        NSLog(@"err = %@",err);
+    }
 }
 
 

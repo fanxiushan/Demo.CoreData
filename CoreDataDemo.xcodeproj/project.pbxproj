@@ -15,6 +15,10 @@
 		B5F25D8A2082F2EA00BA50C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F25D892082F2EA00BA50C0 /* main.m */; };
 		B5F25D942082F2EA00BA50C0 /* CoreDataDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F25D932082F2EA00BA50C0 /* CoreDataDemoTests.m */; };
 		B5F25D9F2082F2EA00BA50C0 /* CoreDataDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F25D9E2082F2EA00BA50C0 /* CoreDataDemoUITests.m */; };
+		B5F25DAE2082F3E200BA50C0 /* FRDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F25DAD2082F3E200BA50C0 /* FRDataManager.m */; };
+		B5F25DB12082F67600BA50C0 /* FRModel.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = B5F25DAF2082F67600BA50C0 /* FRModel.xcdatamodeld */; };
+		B5F25DB62082F6BB00BA50C0 /* User+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F25DB32082F6BB00BA50C0 /* User+CoreDataClass.m */; };
+		B5F25DB72082F6BB00BA50C0 /* User+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F25DB52082F6BB00BA50C0 /* User+CoreDataProperties.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,13 @@
 		B5F25D9A2082F2EA00BA50C0 /* CoreDataDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5F25D9E2082F2EA00BA50C0 /* CoreDataDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataDemoUITests.m; sourceTree = "<group>"; };
 		B5F25DA02082F2EA00BA50C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5F25DAC2082F3E200BA50C0 /* FRDataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRDataManager.h; sourceTree = "<group>"; };
+		B5F25DAD2082F3E200BA50C0 /* FRDataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRDataManager.m; sourceTree = "<group>"; };
+		B5F25DB02082F67600BA50C0 /* FRModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FRModel.xcdatamodel; sourceTree = "<group>"; };
+		B5F25DB22082F6BB00BA50C0 /* User+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "User+CoreDataClass.h"; path = "CoreDataDemo/User+CoreDataClass.h"; sourceTree = "<group>"; };
+		B5F25DB32082F6BB00BA50C0 /* User+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "User+CoreDataClass.m"; path = "CoreDataDemo/User+CoreDataClass.m"; sourceTree = "<group>"; };
+		B5F25DB42082F6BB00BA50C0 /* User+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "User+CoreDataProperties.h"; path = "CoreDataDemo/User+CoreDataProperties.h"; sourceTree = "<group>"; };
+		B5F25DB52082F6BB00BA50C0 /* User+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "User+CoreDataProperties.m"; path = "CoreDataDemo/User+CoreDataProperties.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +92,10 @@
 		B5F25D6E2082F2E200BA50C0 = {
 			isa = PBXGroup;
 			children = (
+				B5F25DB22082F6BB00BA50C0 /* User+CoreDataClass.h */,
+				B5F25DB32082F6BB00BA50C0 /* User+CoreDataClass.m */,
+				B5F25DB42082F6BB00BA50C0 /* User+CoreDataProperties.h */,
+				B5F25DB52082F6BB00BA50C0 /* User+CoreDataProperties.m */,
 				B5F25D792082F2E200BA50C0 /* CoreDataDemo */,
 				B5F25D922082F2EA00BA50C0 /* CoreDataDemoTests */,
 				B5F25D9D2082F2EA00BA50C0 /* CoreDataDemoUITests */,
@@ -105,6 +120,9 @@
 				B5F25D7B2082F2E200BA50C0 /* AppDelegate.m */,
 				B5F25D7D2082F2E200BA50C0 /* ViewController.h */,
 				B5F25D7E2082F2E200BA50C0 /* ViewController.m */,
+				B5F25DAC2082F3E200BA50C0 /* FRDataManager.h */,
+				B5F25DAD2082F3E200BA50C0 /* FRDataManager.m */,
+				B5F25DAF2082F67600BA50C0 /* FRModel.xcdatamodeld */,
 				B5F25D802082F2E200BA50C0 /* Main.storyboard */,
 				B5F25D832082F2EA00BA50C0 /* Assets.xcassets */,
 				B5F25D852082F2EA00BA50C0 /* LaunchScreen.storyboard */,
@@ -235,6 +253,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5F25DB12082F67600BA50C0 /* FRModel.xcdatamodeld in Resources */,
 				B5F25D872082F2EA00BA50C0 /* LaunchScreen.storyboard in Resources */,
 				B5F25D842082F2EA00BA50C0 /* Assets.xcassets in Resources */,
 				B5F25D822082F2E200BA50C0 /* Main.storyboard in Resources */,
@@ -262,9 +281,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5F25DB72082F6BB00BA50C0 /* User+CoreDataProperties.m in Sources */,
+				B5F25DB62082F6BB00BA50C0 /* User+CoreDataClass.m in Sources */,
 				B5F25D7F2082F2E200BA50C0 /* ViewController.m in Sources */,
 				B5F25D8A2082F2EA00BA50C0 /* main.m in Sources */,
 				B5F25D7C2082F2E200BA50C0 /* AppDelegate.m in Sources */,
+				B5F25DAE2082F3E200BA50C0 /* FRDataManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,6 +599,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B5F25DAF2082F67600BA50C0 /* FRModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B5F25DB02082F67600BA50C0 /* FRModel.xcdatamodel */,
+			);
+			currentVersion = B5F25DB02082F67600BA50C0 /* FRModel.xcdatamodel */;
+			path = FRModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B5F25D6F2082F2E200BA50C0 /* Project object */;
 }
